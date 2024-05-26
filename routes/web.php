@@ -9,6 +9,7 @@ use App\Http\Controllers\BonEntresController;
 use App\Http\Controllers\BonSortieController;
 use App\Http\Controllers\DetailBonEntresController;
 use App\Http\Controllers\DetailBonSortieController;
+use App\Http\Controllers\BonLivraisonController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,11 @@ Route::delete('/bon_sorties/{id}/delete_detail/{detail}', [BonSortieController::
 
 Route::get('/bon_sorties/details/{detail_bon_sortie}/edit', [BonSortieController::class, 'editDetail'])->name('bon_sorties.editDetail');
 Route::put('/bon_sorties/details/{detail_bon_sortie}', [BonSortieController::class, 'updateDetail'])->name('bon_sorties.updateDetail');
+Route::resource('bon_livraisons', BonLivraisonController::class);
+
+Route::get('bon_livraisons/{id}/details', [BonLivraisonController::class, 'showDetails'])->name('bon_livraisons.showDetails');
+Route::get('bon_livraisons/{id}/add_detail', [BonLivraisonController::class, 'showAddDetailForm'])->name('bon_livraisons.showAddDetailForm');
+Route::post('bon_livraisons/{id}/add_detail', [BonLivraisonController::class, 'addDetail'])->name('bon_livraisons.addDetail');
+Route::delete('bon_livraisons/{id}/details/{detail}', [BonLivraisonController::class, 'deleteDetail'])->name('bon_livraisons.deleteDetail');
+Route::get('bon_livraisons/{id}/edit_detail', [BonLivraisonController::class, 'editDetail'])->name('bon_livraisons.editDetail');
+Route::put('bon_livraisons/{id}/update_detail', [BonLivraisonController::class, 'updateDetail'])->name('bon_livraisons.updateDetail');

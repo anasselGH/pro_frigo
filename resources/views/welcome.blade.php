@@ -96,6 +96,7 @@
                             <a href="{{ route('bon_sorties.create') }}" class="dropdown-item">add</a>
                         </div>
                     </div>
+                    <a href="{{ route('bon_livraisons.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>bon_livraisons</a>
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>
