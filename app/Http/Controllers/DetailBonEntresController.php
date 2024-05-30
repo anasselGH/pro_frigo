@@ -55,12 +55,7 @@ class DetailBonEntresController extends Controller
         ]);
 
         $detail_bon_entres = Detail_bon_entres::findOrFail($id);
-        $detail_bon_entres->update([
-            'produit_id' => $request->produit_id,
-            'quantite' => $request->quantite,
-            'prix' => $request->prix,
-            'conditionnement_id' => $request->conditionnement_id,
-        ]);
+        $detail_bon_entres->update($request->all());
 
         return redirect()->route('bon_entres.details', $detail_bon_entres->bon_entre_id)->with('success', 'Detail updated successfully.');
     }

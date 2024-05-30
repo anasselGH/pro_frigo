@@ -57,46 +57,27 @@
                 </div>
                 <div class="navbar-nav w-100">
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les vendeurs</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('vendeurs.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('vendeurs.create') }}" class="dropdown-item">add</a>
-                        </div>
+                    <a href="{{ route('vendeurs.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>vendeur</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les familles</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('familles.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('familles.create') }}" class="dropdown-item">add</a>
-                        </div>
+                    <a href="{{ route('familles.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>famille</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les clients</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('clients.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('clients.create') }}" class="dropdown-item">add</a>
-                        </div>
+                    <a href="{{ route('clients.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>client</a>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les produits</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('produits.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('produits.create') }}" class="dropdown-item">add</a>
+                    <a href="{{ route('produits.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>produi</a>
+
                         </div>
                         <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les bon_entres</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('bon_entres.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('bon_entres.create') }}" class="dropdown-item">add</a>
+                        <a href="{{ route('bon_entres.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Bon Entres</a>
                         </div>
                         <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa fa-laptop me-2"></i>les bon_sorties</a>
-                        <div class="dropdown-menu bg-transparent border-0">
-                            <a href="{{ route('bon_sorties.index') }}" class="dropdown-item">show</a>
-                            <a href="{{ route('bon_sorties.create') }}" class="dropdown-item">add</a>
+                        <a href="{{ route('bon_sorties.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Bon Sorties</a>
                         </div>
-                    </div>
                     <a href="{{ route('bon_livraisons.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>bon_livraisons</a>
+                    <a href="{{ route('reglement_clients.index') }}" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>RG_Clients</a>
+
                     <a href="chart.html" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i>Charts</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="far fa-file-alt me-2"></i>Pages</a>

@@ -10,7 +10,8 @@ use App\Http\Controllers\BonSortieController;
 use App\Http\Controllers\DetailBonEntresController;
 use App\Http\Controllers\DetailBonSortieController;
 use App\Http\Controllers\BonLivraisonController;
-
+use App\Http\Controllers\ReglementClientController;
+use App\Http\Controllers\ReglementVendeurController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -61,3 +62,9 @@ Route::post('bon_livraisons/{id}/add_detail', [BonLivraisonController::class, 'a
 Route::delete('bon_livraisons/{id}/details/{detail}', [BonLivraisonController::class, 'deleteDetail'])->name('bon_livraisons.deleteDetail');
 Route::get('bon_livraisons/{id}/edit_detail', [BonLivraisonController::class, 'editDetail'])->name('bon_livraisons.editDetail');
 Route::put('bon_livraisons/{id}/update_detail', [BonLivraisonController::class, 'updateDetail'])->name('bon_livraisons.updateDetail');
+// routes/web.php
+
+
+
+Route::resource('reglement_clients', ReglementClientController::class);
+Route::resource('reglement_vendeurs', ReglementVendeurController::class);
