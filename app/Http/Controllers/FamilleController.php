@@ -32,7 +32,6 @@ class FamilleController extends Controller
 
 
         Famille::create($request->all());
-
         return redirect()->route('familles.index')
             ->with('success', 'Famille ajoutée avec succès.');
     }

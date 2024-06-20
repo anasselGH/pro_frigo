@@ -1,5 +1,4 @@
 @extends('welcome')
-
 @section('main')
 <div class="container mt-5">
     <div class="row">
@@ -14,7 +13,7 @@
     </div>
 
     @if ($errors->any())
-    <div class="alert alert-danger">
+    <div class="alert alert-danger ">
         <strong>Oups!</strong> Il y a eu quelques problèmes avec votre entrée.<br><br>
         <ul>
             @foreach ($errors->all() as $error)
@@ -27,11 +26,11 @@
     <form action="{{ route('clients.store') }}" method="POST">
         @csrf
 
-        <div class="row">
+        <div class="row form">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="form-group">
+                <div class="form-group" >
                     <strong>Nom:</strong>
-                    <input type="text" name="nom" class="form-control" placeholder="Nom">
+                    <input type="text" name="nom"class="form-control"  placeholder="Nom">
                 </div>
                 <div class="form-group">
                     <strong>Prénom:</strong>

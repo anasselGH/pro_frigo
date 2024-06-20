@@ -51,6 +51,9 @@ Route::delete('/bon_sorties/{detail}', 'BonSortiesController@deleteDetail')->nam
 Route::post('/bon_sorties/{id}/add_detail', [BonSortieController::class, 'addDetail'])->name('bon_sorties.addDetail');
 Route::get('/bon_sorties/{id}/add_detail', [BonSortieController::class, 'showAddDetailForm'])->name('bon_sorties.showAddDetailForm');
 Route::delete('/bon_sorties/{id}/delete_detail/{detail}', [BonSortieController::class, 'deleteDetail'])->name('bon_sorties.deleteDetail');
+Route::get('/welcome', function(){
+    return view('nav');
+})->name('welcome');
 
 Route::get('/bon_sorties/details/{detail_bon_sortie}/edit', [BonSortieController::class, 'editDetail'])->name('bon_sorties.editDetail');
 Route::put('/bon_sorties/details/{detail_bon_sortie}', [BonSortieController::class, 'updateDetail'])->name('bon_sorties.updateDetail');

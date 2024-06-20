@@ -43,7 +43,7 @@
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Supprimer</button>
-            <a href="{{ route('bon_entres.details', ['id' => $bon_entre->id]) }}" class="btn btn-primary">View Details</a>
+            <a href="{{ route('bon_entres.details', ['id' => $bon_entre->id]) }}" class="btn btn-primary">Detail</a>
                 </form>
             </td>
         </tr>
